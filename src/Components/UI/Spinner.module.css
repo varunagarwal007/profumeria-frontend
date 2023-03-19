@@ -1,0 +1,130 @@
+.backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 10;
+	background: rgba(0, 0, 0, 0.564);
+}
+
+.container span {
+	display: block;
+	height: 3rem;
+	width: 3rem;
+	background: #ddd;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	margin-top: 5rem;
+}
+.container span:after {
+	content: "";
+	display: block;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	border: 2px solid transparent;
+	border-top-color: #eab84f;
+	border-bottom-color: #eab84f;
+	-webkit-animation: spin 0.5s linear infinite;
+	animation: spin 0.5s linear infinite;
+}
+.container span:nth-of-type(1) {
+	-webkit-animation: bounce 0.55s ease-in-out infinite;
+	animation: bounce 0.55s ease-in-out infinite;
+	margin-left: -5rem;
+}
+.container span:nth-of-type(2) {
+	-webkit-animation: bounce 0.55s ease-in-out 0.33s infinite;
+	animation: bounce 0.55s ease-in-out 0.33s infinite;
+}
+.container span:nth-of-type(3) {
+	-webkit-animation: bounce 0.55s ease-in-out 0.66s infinite;
+	animation: bounce 0.55s ease-in-out 0.66s infinite;
+	margin-left: 5rem;
+}
+.container img {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 33%;
+}
+
+.loading {
+	z-index: 200;
+
+	width: 50rem;
+	height: 22rem;
+	background: hsla(298, 68%, 90%, 1);
+	border-radius: 5px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0rem 4rem 6rem -2rem rgba(0, 0, 0, 0.2);
+}
+.loading p {
+	font-size: 50px;
+	font-weight: 600;
+	letter-spacing: 8px;
+	font-family: "Roboto", sans-serif;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-transform: uppercase;
+	color: #2c3e50;
+	margin-top: -20px;
+}
+
+@-webkit-keyframes bounce {
+	0% {
+		margin-top: 5rem;
+	}
+	50% {
+		margin-top: 3.5rem;
+	}
+	100% {
+		margin-top: 5rem;
+	}
+}
+
+@keyframes bounce {
+	0% {
+		margin-top: 5rem;
+	}
+	50% {
+		margin-top: 3.5rem;
+	}
+	100% {
+		margin-top: 5rem;
+	}
+}
+@-webkit-keyframes spin {
+	0% {
+		transform: rotate(0deg) scale(1);
+	}
+	50% {
+		transform: rotate(90deg) scale(1.1);
+	}
+	100% {
+		transform: rotate(360deg) scale(1);
+	}
+}
+@keyframes spin {
+	0% {
+		transform: rotate(0deg) scale(1);
+	}
+	50% {
+		transform: rotate(90deg) scale(1.1);
+	}
+	100% {
+		transform: rotate(360deg) scale(1);
+	}
+}

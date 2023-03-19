@@ -1,0 +1,42 @@
+.container {
+	position: relative;
+	background-image: url(../../utilities/newbackground.jpg);
+	width: 100%;
+	height: 70vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.textbox {
+	position: absolute;
+	text-align: center;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	background-color: #b5bab890;
+}
+.btn {
+	margin: 2rem;
+	padding: 0.5rem;
+	width: 12rem;
+	height: 5rem;
+	font-size: 1.5rem;
+	letter-spacing: 2px;
+	font-weight: 400;
+	color: #e6f0ed;
+	cursor: pointer;
+	text-transform: uppercase;
+	background-color: rgb(12, 9, 9);
+	border: 1px solid black;
+	border-radius: 2px;
+	transition: all 0.3s;
+	box-shadow: 1px 2px 5px 5px rgba(88, 85, 85, 0.381);
+}
+.btn:hover {
+	background-color: rgb(34, 26, 26);
+	transform: scale(1.05);
+	color: white;
+	text-shadow: 3px 3px #39e2afd2;
+}

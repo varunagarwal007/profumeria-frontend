@@ -1,0 +1,131 @@
+.container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	/* background: linear-gradient(
+		45deg,
+		hsla(298, 68%, 90%, 1) 30%,
+		hsla(30, 82%, 91%, 1) 92%
+	); */
+
+	background: rgb(209, 195, 243);
+
+	background: linear-gradient(
+		225deg,
+		rgb(210, 202, 233) 23%,
+		hsla(285, 74%, 82%, 1) 47%,
+		hsla(321, 52%, 80%, 1) 90%,
+		hsla(345, 84%, 75%, 0.4) 100%
+	);
+	background-blend-mode: soft-light;
+	height: 8rem;
+	/* position: sticky; */
+	top: 0;
+	z-index: 30;
+}
+
+.logo__box {
+	margin: 0 5rem 0 10rem;
+	width: 16rem;
+	cursor: pointer;
+}
+.links {
+	flex-wrap: wrap;
+}
+@media (max-width: 1120px) {
+	.links {
+		display: none;
+	}
+	.signout-btn {
+		display: none;
+	}
+	.ShoppingCartOutlinedIcon {
+		display: none;
+	}
+}
+@media (max-width: 375px) {
+	.logo__box {
+		margin: auto;
+	}
+}
+ul {
+	max-width: 80rem;
+	margin-left: 5rem;
+	list-style: none;
+	text-decoration: none;
+
+	display: flex;
+	flex: 1;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+ul li {
+	margin: 0 0.5rem;
+}
+
+.link {
+	color: hsl(265, 7%, 34%);
+	text-decoration: none;
+	margin: 1rem 1rem 0 1rem;
+	line-height: 3rem;
+	font-size: 1.6rem;
+	display: block;
+	transition: all 0.5s;
+	font-weight: 500;
+	transition: all 0.3s;
+}
+.link:hover {
+	transform: translate(-2px, -2px);
+	text-shadow: 3px 3px #7b7485a1;
+}
+
+.icons {
+	display: flex;
+	justify-content: space-evenly;
+	width: 25rem;
+}
+
+.profile {
+	width: 3rem;
+	transition: all 0.2s;
+}
+.profile:hover {
+	transform: scale(1.2);
+}
+.signout-btn {
+	width: auto;
+	padding: 1rem;
+	font-size: 1rem;
+	background-color: rgb(12, 9, 9);
+	color: #e6f0ed;
+	letter-spacing: 5px;
+	cursor: pointer;
+	text-transform: uppercase;
+	border: 1px solid black;
+	border-radius: 3px;
+	transition: all 0.3s;
+}
+
+.signout-btn:hover {
+	transform: scale(1.2) translate(-2px, -2px);
+	color: white;
+	text-shadow: 3px 3px #39e2afd2;
+}
+
+.ShoppingCartOutlinedIcon {
+	font-size: 3rem;
+	stroke-width: 2px;
+	transition: all 0.3s;
+	position: relative;
+}
+
+.ShoppingCartOutlinedIcon:hover {
+	transform: scale(1.2);
+}
+.badge {
+	transition: all 0.3s;
+}
+.ShoppingCartOutlinedIcon:hover .badge {
+	transform: scale(1.2);
+}

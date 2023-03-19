@@ -1,0 +1,44 @@
+.section {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	z-index: 2;
+}
+
+.container {
+	width: fit-content;
+	height: fit-content;
+	margin: 2rem 0.5rem;
+	padding: 2rem;
+	background-color: white;
+	cursor: pointer;
+	/* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+	border-radius: 5px;
+	transition: all 0.3s;
+}
+.container:hover {
+	transform: scale(1.03);
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+}
+.name {
+	font-size: 1.6rem;
+	font-weight: 600;
+	color: rgb(37 40 43);
+	display: inline-block;
+	position: relative;
+}
+
+.category {
+	font-size: 1.6rem;
+	font-weight: 600;
+	color: #69727b;
+}
+.rating {
+	font-size: 6rem;
+}

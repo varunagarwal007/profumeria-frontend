@@ -1,0 +1,57 @@
+.container {
+	padding: 1rem;
+
+	font-size: 2rem;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	top: 5rem;
+	position: sticky;
+	background: rgba(250, 250, 250, 0.6);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(8.5px);
+	-webkit-backdrop-filter: blur(8.5px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	cursor: pointer;
+}
+
+.price {
+	font-size: 5rem;
+	margin: 1rem 0;
+	font-weight: 600;
+}
+
+.checkout {
+	height: 10rem;
+	/* background-color: red; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.btn {
+	width: 25rem;
+	height: 4rem;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+	border-radius: 3px;
+	border: 2px solid black;
+	font-family: inherit;
+	font-size: 1.8rem;
+	font-weight: 300;
+	transition: all 0.3s;
+}
+
+.btn:hover {
+	transform: scale(1.2) translate(-2px, -2px);
+	color: white;
+	text-shadow: 3px 3px hsla(162, 74%, 55%, 0.68);
+}
+
+.input {
+	width: 25rem;
+	height: 4rem;
+}

@@ -1,0 +1,14 @@
+.container {
+	display: flex;
+	background-color: hsla(0, 2%, 18%, 0.524);
+	margin: 4rem 0;
+	padding: 1rem 1rem;
+	align-items: flex-start;
+	border-radius: 5px;
+}
+
+@media (max-width: 380px) {
+	.container {
+		flex-direction: column;
+	}
+}
